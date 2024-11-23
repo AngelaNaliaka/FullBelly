@@ -27,11 +27,11 @@
   <!-- Section 1: Track Food Waste -->
   <section id="food-waste">
     <h2>Track Your Food Waste</h2>
-    <form>
+    <form id="log-waste-form">
       <label for="product">Product Name</label>
       <input type="text" id="product" name="product" required>
       
-      <label for="quantity">Quantity Discarded</label>
+      <label for="quantity">Quantity Discarded (kg)</label>
       <input type="number" id="quantity" name="quantity" required>
       
       <label for="reason">Reason for Waste</label>
@@ -43,6 +43,7 @@
       
       <button type="submit">Log Waste</button>
     </form>
+    <div id="waste-log"></div>
   </section>
 
   <!-- Section 2: Sustainability Impact -->
@@ -62,15 +63,16 @@
   <!-- Section 3: Food Donations -->
   <section id="food-donations">
     <h2>Log Your Food Donations</h2>
-    <form>
+    <form id="donation-form">
       <label for="donation-item">Food Item</label>
       <input type="text" id="donation-item" name="donation-item" required>
       
-      <label for="donation-quantity">Quantity Donated</label>
+      <label for="donation-quantity">Quantity Donated (kg)</label>
       <input type="number" id="donation-quantity" name="donation-quantity" required>
       
       <button type="submit">Log Donation</button>
     </form>
+    <div id="donation-log"></div>
   </section>
 
   <!-- Section 4: Inventory Management -->
@@ -121,6 +123,8 @@
   <footer>
     <p>&copy; 2024 FullBelly. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
