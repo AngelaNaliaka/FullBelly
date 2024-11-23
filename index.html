@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FullBelly - Reduce Food Waste</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to FullBelly</h1>
+    <p>Your partner in reducing food waste and promoting sustainability.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#food-waste">Track Food Waste</a></li>
+      <li><a href="#sustainability-metrics">Sustainability Impact</a></li>
+      <li><a href="#food-donations">Donate Food</a></li>
+      <li><a href="#inventory-management">Inventory Management</a></li>
+      <li><a href="#ai-insights">AI Insights</a></li>
+      <li><a href="#educational-resources">Resources</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section 1: Track Food Waste -->
+  <section id="food-waste">
+    <h2>Track Your Food Waste</h2>
+    <form>
+      <label for="product">Product Name</label>
+      <input type="text" id="product" name="product" required>
+      
+      <label for="quantity">Quantity Discarded</label>
+      <input type="number" id="quantity" name="quantity" required>
+      
+      <label for="reason">Reason for Waste</label>
+      <select id="reason" name="reason" required>
+        <option value="expired">Expired</option>
+        <option value="overstock">Overstock</option>
+        <option value="spoiled">Spoiled</option>
+      </select>
+      
+      <button type="submit">Log Waste</button>
+    </form>
+  </section>
+
+  <!-- Section 2: Sustainability Impact -->
+  <section id="sustainability-metrics">
+    <h2>Your Sustainability Impact</h2>
+    <div class="metrics">
+      <p>Total Food Waste Reduced: <span id="total-reduced">50kg</span></p>
+      <p>Total Donated: <span id="total-donated">30kg</span></p>
+      <p>Community Impact: <span id="community-impact">500 people helped</span></p>
+      <div class="badges">
+        <h3>Achievements</h3>
+        <div class="badge" id="eco-warrior">Eco Warrior</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Food Donations -->
+  <section id="food-donations">
+    <h2>Log Your Food Donations</h2>
+    <form>
+      <label for="donation-item">Food Item</label>
+      <input type="text" id="donation-item" name="donation-item" required>
+      
+      <label for="donation-quantity">Quantity Donated</label>
+      <input type="number" id="donation-quantity" name="donation-quantity" required>
+      
+      <button type="submit">Log Donation</button>
+    </form>
+  </section>
+
+  <!-- Section 4: Inventory Management -->
+  <section id="inventory-management">
+    <h2>Your Inventory</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Expiration Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fresh Bread</td>
+          <td>20</td>
+          <td>2024-11-30</td>
+          <td><button class="expire-notification">Notify Expiry</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 5: AI Insights -->
+  <section id="ai-insights">
+    <h2>AI Recommendations</h2>
+    <div class="recommendations">
+      <p><strong>Recommendation:</strong> Reduce order of Fresh Bread by 15% next month due to high waste rate.</p>
+      <p><strong>Suggested Recipe:</strong> Use leftover veggies to create a soup, reducing waste.</p>
+    </div>
+  </section>
+
+  <!-- Section 6: Educational Resources -->
+  <section id="educational-resources">
+    <h2>Learn How to Reduce Waste</h2>
+    <div class="resource">
+      <h3>Success Story: XYZ Bakery’s Journey to Zero Waste</h3>
+      <p>XYZ Bakery reduced food waste by 70% by implementing smarter inventory management...</p>
+    </div>
+    <div class="tips">
+      <h3>Sustainability Tips</h3>
+      <p>Tip: Start with smaller portion sizes to reduce excess food waste...</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 FullBelly. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
